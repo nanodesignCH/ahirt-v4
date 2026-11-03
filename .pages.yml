@@ -1,0 +1,68 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: projekte
+    label: Referenzprojekte
+    description: Die Projekte auf der Seite «Referenzen» und als Punkte auf der Seeland-Karte. Die Reihenfolge hier ist auch die Reihenfolge auf der Website.
+    type: file
+    path: data/projekte.json
+    format: json
+    list: true
+    fields:
+      - name: t
+        label: Titel
+        description: Name des Projekts, am besten mit Ort, z. B. «Carport, Bellmund».
+        type: string
+        required: true
+      - name: c
+        label: Kurzbezeichnung
+        description: Ein paar Worte unter dem Titel auf der Projektkachel, z. B. «Sanierung» oder «Umbau eines Wohnhauses».
+        type: string
+      - name: o
+        label: Ort
+        description: Bestimmt, wo das Projekt als Punkt auf der Karte erscheint. Fehlt Ihr Ort, wählen Sie den nächstgelegenen.
+        type: select
+        required: true
+        options:
+          values: [Ligerz, Twann, Biel, Brügg, Bellmund, Tüscherz-Alfermée]
+      - name: d
+        label: Beschreibung
+        description: Ein bis zwei Sätze zum Projekt. Erscheint auf der Karte und in der Bildergalerie.
+        type: text
+      - name: imgs
+        label: Bilder
+        description: Fotos des Projekts. Das erste Bild ist das Titelbild der Kachel. Querformat wirkt am besten.
+        type: image
+        list: true
+        required: true
+
+  - name: team
+    label: Team
+    description: Die Personen auf der Seite «Team». Innerhalb einer Gruppe gilt die Reihenfolge von oben nach unten.
+    type: file
+    path: data/team.json
+    format: json
+    list: true
+    fields:
+      - name: gruppe
+        label: Gruppe
+        description: Unter welchem Titel die Person erscheint.
+        type: select
+        required: true
+        options:
+          values: [Geschäftsleitung und Administration, Unsere Spezialisten]
+      - name: name
+        label: Name
+        description: Vor- und Nachname.
+        type: string
+        required: true
+      - name: funktion
+        label: Funktion
+        description: Rolle im Betrieb, z. B. «Polier» oder «Administration».
+        type: string
+      - name: foto
+        label: Foto
+        description: Porträt im Hochformat. Ohne Foto zeigt die Website die Initialen als Platzhalter.
+        type: image

@@ -1,0 +1,73 @@
+[
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Dominique Anker",
+    "funktion": "Geschäftsinhaber",
+    "foto": "assets/t/mb_1.jpg"
+  },
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Jérôme Egger",
+    "funktion": "Polier / Stv. Geschäftsführer",
+    "foto": "assets/t/mb_11.jpg"
+  },
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Adrian Duarte",
+    "funktion": "Vorarbeiter / Polier",
+    "foto": "assets/t/duarte.jpg"
+  },
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Sarah Aebersold",
+    "funktion": "Administration",
+    "foto": "assets/t/mb_2.jpg"
+  },
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Alain Hirter",
+    "funktion": "Landstreicher"
+  },
+  {
+    "gruppe": "Geschäftsleitung und Administration",
+    "name": "Alfred Hirt",
+    "funktion": "Ehem. Geschäftsführer",
+    "foto": "assets/t/ma2.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "Luis Carlos Marques Guedes",
+    "funktion": "Abbruch / Tiefbauarbeiten, Natursteinmauerwerk",
+    "foto": "assets/t/mb_5.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "Joao Manuel Alves Dos Santoas",
+    "funktion": "Umbauten / Sanierungen, Trockenmauerwerk / Natursteinmauerwerk",
+    "foto": "assets/t/mb_7.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "Vitor Manuel Teixeira Da Silva",
+    "funktion": "Abbruch / Tiefbauarbeiten, Natursteinmauerwerk",
+    "foto": "assets/t/mb_8.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "José-Antonio Vigo Balanco",
+    "funktion": "Sanierungen / Neubauten / Umbauten, Reparaturen",
+    "foto": "assets/t/mb_3.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "Sérgio Aurélio Torres Carvalhais",
+    "funktion": "Umbauten / Tiefbauarbeiten, Trockenmauerwerk / Natursteinmauerwerk",
+    "foto": "assets/t/mb_10.jpg"
+  },
+  {
+    "gruppe": "Unsere Spezialisten",
+    "name": "Roland Tschanz",
+    "funktion": "Magaziner / Verstärkung für Baustelle",
+    "foto": "assets/t/mb_4.jpg"
+  }
+]
