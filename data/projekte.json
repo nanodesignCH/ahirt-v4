@@ -1,0 +1,147 @@
+[
+  {
+    "t": "Lariau, Ligerz",
+    "c": "Referenzobjekt am Bielersee",
+    "o": "Ligerz",
+    "d": "Um- und Anbau am historischen Gebäude Lariau in Ligerz, mit neuem verglastem Anbau.",
+    "imgs": [
+      "assets/p/1.jpg",
+      "assets/p/6.jpg",
+      "assets/p/4.jpg",
+      "assets/p/5.jpg",
+      "assets/p/3.jpg",
+      "assets/p/2.jpg",
+      "assets/p/7-1.jpg",
+      "assets/p/lariau_7.jpg",
+      "assets/p/lariau_8-1.jpg",
+      "assets/p/lariau_2.jpg",
+      "assets/p/lariau_3.jpg",
+      "assets/p/lariau_4.jpg",
+      "assets/p/lariau_5.jpg",
+      "assets/p/lariau_6.jpg",
+      "assets/p/lariau_15.jpg"
+    ]
+  },
+  {
+    "t": "Rebmauer Twann",
+    "c": "Trockenmauerwerk, ARG mit Roland Mürset",
+    "o": "Twann",
+    "d": "Trockenmauerwerk für eine Rebmauer in Twann, ausgeführt in Arbeitsgemeinschaft mit Roland Mürset.",
+    "imgs": [
+      "assets/p/14.jpg",
+      "assets/p/10-1.jpg",
+      "assets/p/8.jpg",
+      "assets/p/9.jpg",
+      "assets/p/16.jpg",
+      "assets/p/10.jpg",
+      "assets/p/12.jpg",
+      "assets/p/15.jpg",
+      "assets/p/11.jpg",
+      "assets/p/13.jpg"
+    ]
+  },
+  {
+    "t": "Gartensitzplatz, Brügg",
+    "c": "Gartenbauarbeiten",
+    "o": "Brügg",
+    "d": "Neuer Gartensitzplatz mit Kiesfläche und Einfassung in Brügg.",
+    "imgs": [
+      "assets/p/kies_5.jpg",
+      "assets/p/kies_4.jpg",
+      "assets/p/kies_2.jpg",
+      "assets/p/kies_10.jpg",
+      "assets/p/kies_6.jpg",
+      "assets/p/kies_8.jpg",
+      "assets/p/kies_9.jpg",
+      "assets/p/kies_3.jpg",
+      "assets/p/kies_7.jpg",
+      "assets/p/kies_1.jpg"
+    ]
+  },
+  {
+    "t": "Kaminhut (Bernerhut), Biel",
+    "c": "Sanierung",
+    "o": "Biel",
+    "d": "Sanierung eines historischen Kaminhuts (Bernerhut) in Biel.",
+    "imgs": [
+      "assets/p/kaminhut_10.jpg",
+      "assets/p/kaminhut_1.jpg",
+      "assets/p/kaminhut_2.jpg",
+      "assets/p/kaminhut_3.jpg",
+      "assets/p/kaminhut_4.jpg",
+      "assets/p/kaminhut_5.jpg",
+      "assets/p/kaminhut_6.jpg",
+      "assets/p/kaminhut_7.jpg",
+      "assets/p/kaminhut_8.jpg",
+      "assets/p/kaminhut_9.jpg"
+    ]
+  },
+  {
+    "t": "Velounterstand, Biel",
+    "c": "Referenzobjekt",
+    "o": "Biel",
+    "d": "Fundament und Plattenbelag für einen Velounterstand in Biel.",
+    "imgs": [
+      "assets/p/velounterstand_1.jpg",
+      "assets/p/velounterstand_2.jpg",
+      "assets/p/velounterstand_3.jpg",
+      "assets/p/velounterstand_4.jpg",
+      "assets/p/velounterstand_5.jpg",
+      "assets/p/velounterstand_6.jpg"
+    ]
+  },
+  {
+    "t": "Natursteinmauern",
+    "c": "Rebmauern, Trockenmauerwerke, Stützmauern",
+    "o": "Twann",
+    "d": "Natursteinmauern aus Kalksteinblöcken, kombiniert mit neuen Betonbauten.",
+    "imgs": [
+      "assets/p/natursteinmauern.jpg",
+      "assets/p/natursteinmauern_2.jpg",
+      "assets/p/natursteinmauern_3.jpg",
+      "assets/p/natursteinmauern_4.jpg",
+      "assets/p/natursteinmauern_5.jpg",
+      "assets/p/natursteinmauern_6.jpg",
+      "assets/p/natursteinmauern_7.jpg",
+      "assets/p/natursteinmauern_8.jpg"
+    ]
+  },
+  {
+    "t": "Carport, Bellmund",
+    "c": "Referenzobjekt",
+    "o": "Bellmund",
+    "d": "Aushub, Stützmauern und Fundament für einen Carport in Bellmund.",
+    "imgs": [
+      "assets/p/carport_1.jpg",
+      "assets/p/carport_2.jpg",
+      "assets/p/carport_3.jpg",
+      "assets/p/carport_4.jpg",
+      "assets/p/carport_5.jpg",
+      "assets/p/carport_6-1.jpg"
+    ]
+  },
+  {
+    "t": "Umbau Schott, Twann",
+    "c": "Umbau eines Wohnhauses",
+    "o": "Twann",
+    "d": "Umbau eines Altbaus in Twann: Rückbau, neue Bodenplatte und Innenausbau.",
+    "imgs": [
+      "assets/p/schott_2.jpg",
+      "assets/p/schott_3.jpg",
+      "assets/p/schott_4.jpg",
+      "assets/p/schott_5.jpg",
+      "assets/p/schott_6.jpg",
+      "assets/p/schott_7.jpg",
+      "assets/p/schott_8.jpg"
+    ]
+  },
+  {
+    "t": "Engel, Biel",
+    "c": "Erweiterung Stahlhalle",
+    "o": "Biel",
+    "d": "Erweiterung der Stahlhalle der Engel AG in Biel.",
+    "imgs": [
+      "assets/20190826_132217.jpg"
+    ]
+  }
+]
