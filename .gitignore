@@ -1,0 +1,21 @@
+.DS_Store
+qa/
+
+# interne Arbeitsdateien
+design-dna.json
+firma.json
+
+# ungenutzte Duplikate (Originale liegen in assets/p/)
+/assets/1.jpg
+/assets/5.jpg
+/assets/9.jpg
+/assets/14.jpg
+/assets/carport_*.jpg
+/assets/kaminhut_*.jpg
+/assets/kies_*.jpg
+/assets/lariau_*.jpg
+/assets/natursteinmauern*.jpg
+/assets/rebmauer.jpg
+/assets/schott_*.jpg
+/assets/velounterstand_1.jpg
+/assets/logo.png
