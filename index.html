@@ -921,8 +921,8 @@ p{margin:0}
 <script>
 /* Referenzobjekte (data/projekte.json) und Team (data/team.json) pflegt der Kunde in Pages CMS (.pages.yml) */
 var PROJECTS = [], TEAM = [];
-/* Ortsnamen müssen mit der Auswahl "Ort" in .pages.yml übereinstimmen */
-var ORTE = {'Tüscherz-Alfermée':[7.1983,47.1167], Ligerz:[7.1372,47.0834], Twann:[7.1574,47.0946], Biel:[7.2468,47.1368], 'Brügg':[7.2780,47.1237], Bellmund:[7.2455,47.1072]};
+/* Koordinaten [lon, lat] pro Ort aus data/orte.json, neue Orte ergänzt die Action .github/workflows/geocode.yml */
+var ORTE = {};
 var KARTE = {lonMin:7.02, lonMax:7.34, latMin:47.04, latMax:47.142};
 
 (function(){
@@ -937,9 +937,16 @@ var KARTE = {lonMin:7.02, lonMax:7.34, latMin:47.04, latMax:47.142};
   function load(url){
     return fetch(url).then(function(r){ return r.ok ? r.json() : []; }).then(function(d){ return Array.isArray(d) ? d.filter(Boolean) : []; }, function(){ return []; });
   }
-  var ready = Promise.all([load('data/projekte.json'), load('data/team.json')]).then(function(d){
+  function loadOrte(url){
+    return fetch(url).then(function(r){ return r.ok ? r.json() : {}; }).then(function(d){ return d && typeof d === 'object' && !Array.isArray(d) ? d : {}; }, function(){ return {}; });
+  }
+  /* nur gültige Koordinaten innerhalb des Kartenausschnitts bekommen einen Pin */
+  function onMap(c){ return Array.isArray(c) && c[0] >= KARTE.lonMin && c[0] <= KARTE.lonMax && c[1] >= KARTE.latMin && c[1] <= KARTE.latMax; }
+  var ready = Promise.all([load('data/projekte.json'), load('data/team.json'), loadOrte('data/orte.json')]).then(function(d){
     PROJECTS = d[0].filter(function(p){ return p.t && Array.isArray(p.imgs) && p.imgs.length; });
     TEAM = d[1].filter(function(m){ return m.name; });
+    Object.keys(d[2]).forEach(function(k){ if(onMap(d[2][k])) ORTE[k.trim()] = d[2][k]; });
+    PROJECTS.forEach(function(p){ p.o = String(p.o || '').trim(); });
     renderProjects(); renderTeam();
   }).catch(function(e){ console.error('Inhalte konnten nicht dargestellt werden', e); });
 
@@ -976,8 +983,10 @@ var KARTE = {lonMin:7.02, lonMax:7.34, latMin:47.04, latMax:47.142};
       return '<div class="loc" style="left:' + c.x.toFixed(2) + '%;top:' + c.y.toFixed(2) + '%;--fan:' + fan + '"><button class="dot" type="button" aria-label="' + esc(p.t) + ' anzeigen"><span></span></button>' +
         '<div class="tip' + (c.y < 45 ? ' below' : '') + '"><img src="' + esc(p.imgs[0]) + '" alt="" loading="lazy"><b>' + esc(p.t) + '</b><p>' + esc(p.d) + '</p><button class="more" type="button" data-proj="' + PROJECTS.indexOf(p) + '">Projekt ansehen <svg><use href="#i-ar"/></svg></button></div></div>';
     }).join('');
-    var s = pos('Tüscherz-Alfermée');
-    html += '<div class="loc" style="left:' + s.x.toFixed(2) + '%;top:' + s.y.toFixed(2) + '%"><button class="dot sitz" type="button" aria-label="Firmensitz Tüscherz-Alfermée"><span></span></button><div class="tip sitz-tip"><b>Tüscherz-Alfermée</b><p>Firmensitz, Neuenburgstrasse 10</p></div></div>';
+    if(ORTE['Tüscherz-Alfermée']){
+      var s = pos('Tüscherz-Alfermée');
+      html += '<div class="loc" style="left:' + s.x.toFixed(2) + '%;top:' + s.y.toFixed(2) + '%"><button class="dot sitz" type="button" aria-label="Firmensitz Tüscherz-Alfermée"><span></span></button><div class="tip sitz-tip"><b>Tüscherz-Alfermée</b><p>Firmensitz, Neuenburgstrasse 10</p></div></div>';
+    }
     map.querySelector('.locs').innerHTML = html;
     var locs = [].slice.call(map.querySelectorAll('.loc')), timer;
     /* Kärtchen in die Sektion einpassen: über translate, transform gehört der Einblendung */

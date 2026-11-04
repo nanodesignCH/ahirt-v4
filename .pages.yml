@@ -22,11 +22,9 @@ content:
         type: string
       - name: o
         label: Ort
-        description: Bestimmt, wo das Projekt als Punkt auf der Karte erscheint. Fehlt Ihr Ort, wählen Sie den nächstgelegenen.
-        type: select
+        description: Gemeinde oder Ortschaft, z. B. Erlach. Der Punkt auf der Karte wird automatisch gesetzt.
+        type: string
         required: true
-        options:
-          values: [Ligerz, Twann, Biel, Brügg, Bellmund, Tüscherz-Alfermée]
       - name: d
         label: Beschreibung
         description: Ein bis zwei Sätze zum Projekt. Erscheint auf der Karte und in der Bildergalerie.
