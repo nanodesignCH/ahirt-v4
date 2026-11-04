@@ -143,5 +143,14 @@
     "imgs": [
       "assets/20190826_132217.jpg"
     ]
+  },
+  {
+    "t": "Test Referenzobjekt",
+    "c": "Test für Pin + Detailansicht",
+    "o": "Mörigen",
+    "d": "Beschreibung XY ",
+    "imgs": [
+      "/assets/uploads/Referenzobjekte/test.jpg"
+    ]
   }
 ]
